@@ -1,0 +1,126 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXFileReference section */
+		AF970E5528F0CB1E001AAB75 /* DeliveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryView.swift; sourceTree = "<group>"; };
+		AF970E5728F0CB48001AAB75 /* DynamicIslandViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIslandViewModel.swift; sourceTree = "<group>"; };
+		AF970E5828F0CBCC001AAB75 /* ActivityAttributesDynamicIsland.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityAttributesDynamicIsland.swift; sourceTree = "<group>"; };
+		AF970E5A28F0CE06001AAB75 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		AF970E5B28F0D232001AAB75 /* Delivery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delivery.swift; sourceTree = "<group>"; };
+		AF970E5C28F0DA42001AAB75 /* Taxi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Taxi.swift; sourceTree = "<group>"; };
+		AF970E5D28F0DD68001AAB75 /* DynamicIslandType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIslandType.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		AF970E4A28F0CA40001AAB75 = {
+			isa = PBXGroup;
+			children = (
+				AF970E5128F0CA49001AAB75 /* Shared */,
+			);
+			sourceTree = "<group>";
+		};
+		AF970E5128F0CA49001AAB75 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				AF970E5928F0CD9D001AAB75 /* Extensions */,
+				AF970E5428F0CA66001AAB75 /* Views */,
+				AF970E5328F0CA5E001AAB75 /* ViewModel */,
+				AF970E5228F0CA54001AAB75 /* Model */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		AF970E5228F0CA54001AAB75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF970E5828F0CBCC001AAB75 /* ActivityAttributesDynamicIsland.swift */,
+				AF970E5B28F0D232001AAB75 /* Delivery.swift */,
+				AF970E5C28F0DA42001AAB75 /* Taxi.swift */,
+				AF970E5D28F0DD68001AAB75 /* DynamicIslandType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF970E5328F0CA5E001AAB75 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AF970E5728F0CB48001AAB75 /* DynamicIslandViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AF970E5428F0CA66001AAB75 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AF970E5528F0CB1E001AAB75 /* DeliveryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AF970E5928F0CD9D001AAB75 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AF970E5A28F0CE06001AAB75 /* Double.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		AF970E4B28F0CA40001AAB75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1410;
+			};
+			buildConfigurationList = AF970E4E28F0CA40001AAB75 /* Build configuration list for PBXProject "DynamicIsland" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF970E4A28F0CA40001AAB75;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		AF970E4F28F0CA40001AAB75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		AF970E5028F0CA40001AAB75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF970E4E28F0CA40001AAB75 /* Build configuration list for PBXProject "DynamicIsland" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF970E4F28F0CA40001AAB75 /* Debug */,
+				AF970E5028F0CA40001AAB75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF970E4B28F0CA40001AAB75 /* Project object */;
+}
