@@ -16,7 +16,7 @@ class DynamicIslandViewModel:  ObservableObject {
         
         let dynamicIslandType =  DynamicIslandViewType.deliveryExpanded
         
-        startActivity(dynamicIslandType: dynamicIslandType)
+        startActivity(dynamicIslandType: dynamicIslandType, minute: 30)
         
         Task{
             try await Task.sleep(nanoseconds: UInt64(60 * Double(NSEC_PER_SEC)))
@@ -26,7 +26,7 @@ class DynamicIslandViewModel:  ObservableObject {
         
     }
     
-    private func startActivity(dynamicIslandType : DynamicIslandViewType) {
+    private func startActivity(dynamicIslandType : DynamicIslandViewType, minute: Double) {
         
         let attributes = ActivityAttributesDynamicIsland(dataType: dynamicIslandType.dataType, viewType: dynamicIslandType.id)
         
@@ -38,7 +38,7 @@ class DynamicIslandViewModel:  ObservableObject {
             
             let taxi: Taxi = Taxi.hailing
             
-            contentState = ActivityAttributesDynamicIsland.ContentState(imageName: taxi.imageName, title: taxi.title, description: "Pickup by BO Tower on JBR St", percent: 0, value: 29.77)
+            contentState = ActivityAttributesDynamicIsland.ContentState(imageName: taxi.imageName, title: taxi.title, description: "Pickup by BO Tower on JBR St", percent: 0, value: minute)
             
             
             activity = try? Activity<ActivityAttributesDynamicIsland>.request(attributes: attributes, contentState: contentState, pushType: nil)
@@ -47,7 +47,7 @@ class DynamicIslandViewModel:  ObservableObject {
             
             let delivery: Delivery = Delivery.preparing
             
-            contentState = ActivityAttributesDynamicIsland.ContentState(imageName: delivery.imageName, title: delivery.title, description: "Preparing your food", percent: 0, value: 14.99)
+            contentState = ActivityAttributesDynamicIsland.ContentState(imageName: delivery.imageName, title: delivery.title, description: "Preparing your food", percent: 0, value: minute)
            
             
             activity = try? Activity<ActivityAttributesDynamicIsland>.request(attributes: attributes, contentState: contentState, pushType: nil)
@@ -67,7 +67,7 @@ class DynamicIslandViewModel:  ObservableObject {
             let taxi: Taxi = Taxi.arrived
             let description = "Your trip is about to start"
             
-            let contentState = ActivityAttributesDynamicIsland.ContentState(imageName: taxi.imageName, title: taxi.title, description: description, percent: percent, value: 29.77)
+            let contentState = ActivityAttributesDynamicIsland.ContentState(imageName: taxi.imageName, title: taxi.title, description: description, percent: percent, value: 0)
             
             Task{
                 await activity?.end(using: contentState, dismissalPolicy: .immediate)
@@ -78,7 +78,7 @@ class DynamicIslandViewModel:  ObservableObject {
             let delivery: Delivery = Delivery.delivered
             let description = "Bon Appetit!"
 
-            let contentState = ActivityAttributesDynamicIsland.ContentState(imageName: delivery.imageName, title: delivery.title, description: description, percent: percent, value: 14.99)
+            let contentState = ActivityAttributesDynamicIsland.ContentState(imageName: delivery.imageName, title: delivery.title, description: description, percent: percent, value: 0)
            
             Task{
                 await activity?.end(using: contentState, dismissalPolicy: .immediate)
@@ -91,7 +91,7 @@ class DynamicIslandViewModel:  ObservableObject {
         
     }
     
-    private func updateActivity(dynamicIslandType : DynamicIslandViewType, percent: Double) {
+    private func updateActivity(dynamicIslandType : DynamicIslandViewType, percent: Double, minute: Double) {
         
         switch dynamicIslandType.dataType {
             
@@ -100,7 +100,7 @@ class DynamicIslandViewModel:  ObservableObject {
             let taxi: Taxi = percent < 80 ? Taxi.onTheWay : Taxi.arrivingSoon
             let description = percent < 80 ? "Pickup by BO Tower on JBR St": "Meet by BO Tower on JBR St"
             
-            let contentState = ActivityAttributesDynamicIsland.ContentState(imageName: taxi.imageName, title: taxi.title, description: description, percent: percent, value: 29.77)
+            let contentState = ActivityAttributesDynamicIsland.ContentState(imageName: taxi.imageName, title: taxi.title, description: description, percent: percent, value: minute)
             
             Task{
                 await activity?.update(using: contentState)
@@ -111,7 +111,7 @@ class DynamicIslandViewModel:  ObservableObject {
             let delivery: Delivery = percent < 80 ? Delivery.onTheWay : Delivery.arrivingSoon
             let description = percent < 80 ? "Your food is on the way": "Your food is arriving soon"
 
-            let contentState = ActivityAttributesDynamicIsland.ContentState(imageName: delivery.imageName, title: delivery.title, description: description, percent: percent, value: 14.99)
+            let contentState = ActivityAttributesDynamicIsland.ContentState(imageName: delivery.imageName, title: delivery.title, description: description, percent: percent, value: minute)
            
             Task{
                 await activity?.update(using: contentState)

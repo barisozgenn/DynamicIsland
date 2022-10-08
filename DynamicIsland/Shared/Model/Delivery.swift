@@ -28,7 +28,7 @@ enum Delivery: Int, CaseIterable, Identifiable {
     
     var imageName : String {
         switch self {
-        case .preparing: return "person.badge.clock"
+        case .preparing: return "flame"
         case .onTheWay: return "figure.outdoor.cycle"
         case .arrivingSoon: return "figure.walk.motion"
         case .delivered: return "bag.fill"
