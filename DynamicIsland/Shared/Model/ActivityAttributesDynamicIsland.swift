@@ -11,6 +11,7 @@ import ActivityKit
 struct ActivityAttributesDynamicIsland: ActivityAttributes {
     public struct ContentState: Codable, Hashable {
         // Dynamic stateful properties about your activity go here!
+        var imageName: String
         var title: String
         var description: String
         var percent: Double
@@ -18,5 +19,6 @@ struct ActivityAttributesDynamicIsland: ActivityAttributes {
     }
 
     // Fixed non-changing properties about your activity go here!
-    var name: String
+    var dataType : DynamicIslandViewType.DataType.RawValue
+    var viewType : DynamicIslandViewType.ID
 }

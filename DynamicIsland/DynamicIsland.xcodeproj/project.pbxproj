@@ -6,21 +6,144 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AF006EE928F1B9E400CDCBF2 /* TaxiWideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF006EE828F1B9E400CDCBF2 /* TaxiWideView.swift */; };
+		AF006EEA28F1B9E400CDCBF2 /* TaxiWideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF006EE828F1B9E400CDCBF2 /* TaxiWideView.swift */; };
+		AF006EEC28F1BA2200CDCBF2 /* DeliveryWideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF006EEB28F1BA2200CDCBF2 /* DeliveryWideView.swift */; };
+		AF006EED28F1BA2200CDCBF2 /* DeliveryWideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF006EEB28F1BA2200CDCBF2 /* DeliveryWideView.swift */; };
+		AF894A4428F1A15F0000F1B5 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF894A4328F1A15F0000F1B5 /* WidgetKit.framework */; };
+		AF894A4628F1A15F0000F1B5 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF894A4528F1A15F0000F1B5 /* SwiftUI.framework */; };
+		AF894A4928F1A15F0000F1B5 /* DynamicIsland_WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF894A4828F1A15F0000F1B5 /* DynamicIsland_WidgetBundle.swift */; };
+		AF894A4B28F1A15F0000F1B5 /* DynamicIsland_WidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF894A4A28F1A15F0000F1B5 /* DynamicIsland_WidgetLiveActivity.swift */; };
+		AF894A4D28F1A15F0000F1B5 /* DynamicIsland_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF894A4C28F1A15F0000F1B5 /* DynamicIsland_Widget.swift */; };
+		AF894A5028F1A1600000F1B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF894A4F28F1A1600000F1B5 /* Assets.xcassets */; };
+		AF894A5228F1A1600000F1B5 /* DynamicIsland_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AF894A4E28F1A15F0000F1B5 /* DynamicIsland_Widget.intentdefinition */; };
+		AF894A5328F1A1600000F1B5 /* DynamicIsland_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AF894A4E28F1A15F0000F1B5 /* DynamicIsland_Widget.intentdefinition */; };
+		AF894A5628F1A1600000F1B5 /* DynamicIsland-WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AF894A4128F1A15F0000F1B5 /* DynamicIsland-WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AF894A5B28F1A1C20000F1B5 /* DynamicIslandViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF970E5D28F0DD68001AAB75 /* DynamicIslandViewType.swift */; };
+		AF894A5C28F1A1C20000F1B5 /* Taxi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF970E5C28F0DA42001AAB75 /* Taxi.swift */; };
+		AF894A5D28F1A1C20000F1B5 /* ActivityAttributesDynamicIsland.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF970E5828F0CBCC001AAB75 /* ActivityAttributesDynamicIsland.swift */; };
+		AF894A5E28F1A1C20000F1B5 /* Delivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF970E5B28F0D232001AAB75 /* Delivery.swift */; };
+		AF894A5F28F1A1C40000F1B5 /* DynamicIslandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF970E5728F0CB48001AAB75 /* DynamicIslandViewModel.swift */; };
+		AF894A6028F1A1C80000F1B5 /* DynamicIslandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF970E5528F0CB1E001AAB75 /* DynamicIslandView.swift */; };
+		AF894A6128F1A1C80000F1B5 /* DeliveryExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF970E5F28F0DF8E001AAB75 /* DeliveryExpandedView.swift */; };
+		AF894A6228F1A1C80000F1B5 /* TaxiExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF970E5E28F0DF79001AAB75 /* TaxiExpandedView.swift */; };
+		AF894A6328F1A1CB0000F1B5 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF970E5A28F0CE06001AAB75 /* Double.swift */; };
+		AF970E6828F1853A001AAB75 /* DynamicIsland_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF970E6728F1853A001AAB75 /* DynamicIsland_iOSApp.swift */; };
+		AF970E6C28F1853B001AAB75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF970E6B28F1853B001AAB75 /* Assets.xcassets */; };
+		AF970E6F28F1853B001AAB75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF970E6E28F1853B001AAB75 /* Preview Assets.xcassets */; };
+		AF970E7328F18551001AAB75 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF970E5A28F0CE06001AAB75 /* Double.swift */; };
+		AF970E7428F18551001AAB75 /* DeliveryExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF970E5F28F0DF8E001AAB75 /* DeliveryExpandedView.swift */; };
+		AF970E7528F18551001AAB75 /* DynamicIslandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF970E5528F0CB1E001AAB75 /* DynamicIslandView.swift */; };
+		AF970E7628F18551001AAB75 /* Taxi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF970E5C28F0DA42001AAB75 /* Taxi.swift */; };
+		AF970E7728F18551001AAB75 /* DynamicIslandViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF970E5D28F0DD68001AAB75 /* DynamicIslandViewType.swift */; };
+		AF970E7828F18551001AAB75 /* Delivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF970E5B28F0D232001AAB75 /* Delivery.swift */; };
+		AF970E7928F18551001AAB75 /* TaxiExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF970E5E28F0DF79001AAB75 /* TaxiExpandedView.swift */; };
+		AF970E7A28F18551001AAB75 /* ActivityAttributesDynamicIsland.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF970E5828F0CBCC001AAB75 /* ActivityAttributesDynamicIsland.swift */; };
+		AF970E7B28F18551001AAB75 /* DynamicIslandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF970E5728F0CB48001AAB75 /* DynamicIslandViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF894A5428F1A1600000F1B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF970E4B28F0CA40001AAB75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF894A4028F1A15F0000F1B5;
+			remoteInfo = "DynamicIsland-WidgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AF894A5A28F1A1600000F1B5 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AF894A5628F1A1600000F1B5 /* DynamicIsland-WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		AF970E5528F0CB1E001AAB75 /* DeliveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryView.swift; sourceTree = "<group>"; };
+		AF006EE828F1B9E400CDCBF2 /* TaxiWideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiWideView.swift; sourceTree = "<group>"; };
+		AF006EEB28F1BA2200CDCBF2 /* DeliveryWideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryWideView.swift; sourceTree = "<group>"; };
+		AF894A4128F1A15F0000F1B5 /* DynamicIsland-WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DynamicIsland-WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF894A4328F1A15F0000F1B5 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		AF894A4528F1A15F0000F1B5 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		AF894A4828F1A15F0000F1B5 /* DynamicIsland_WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIsland_WidgetBundle.swift; sourceTree = "<group>"; };
+		AF894A4A28F1A15F0000F1B5 /* DynamicIsland_WidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIsland_WidgetLiveActivity.swift; sourceTree = "<group>"; };
+		AF894A4C28F1A15F0000F1B5 /* DynamicIsland_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIsland_Widget.swift; sourceTree = "<group>"; };
+		AF894A4E28F1A15F0000F1B5 /* DynamicIsland_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = DynamicIsland_Widget.intentdefinition; sourceTree = "<group>"; };
+		AF894A4F28F1A1600000F1B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF894A5128F1A1600000F1B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF970E5528F0CB1E001AAB75 /* DynamicIslandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIslandView.swift; sourceTree = "<group>"; };
 		AF970E5728F0CB48001AAB75 /* DynamicIslandViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIslandViewModel.swift; sourceTree = "<group>"; };
 		AF970E5828F0CBCC001AAB75 /* ActivityAttributesDynamicIsland.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityAttributesDynamicIsland.swift; sourceTree = "<group>"; };
 		AF970E5A28F0CE06001AAB75 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		AF970E5B28F0D232001AAB75 /* Delivery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delivery.swift; sourceTree = "<group>"; };
 		AF970E5C28F0DA42001AAB75 /* Taxi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Taxi.swift; sourceTree = "<group>"; };
-		AF970E5D28F0DD68001AAB75 /* DynamicIslandType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIslandType.swift; sourceTree = "<group>"; };
+		AF970E5D28F0DD68001AAB75 /* DynamicIslandViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIslandViewType.swift; sourceTree = "<group>"; };
+		AF970E5E28F0DF79001AAB75 /* TaxiExpandedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiExpandedView.swift; sourceTree = "<group>"; };
+		AF970E5F28F0DF8E001AAB75 /* DeliveryExpandedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryExpandedView.swift; sourceTree = "<group>"; };
+		AF970E6428F1853A001AAB75 /* DynamicIsland-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DynamicIsland-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF970E6728F1853A001AAB75 /* DynamicIsland_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIsland_iOSApp.swift; sourceTree = "<group>"; };
+		AF970E6B28F1853B001AAB75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF970E6E28F1853B001AAB75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		AF894A3E28F1A15F0000F1B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF894A4628F1A15F0000F1B5 /* SwiftUI.framework in Frameworks */,
+				AF894A4428F1A15F0000F1B5 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF970E6128F1853A001AAB75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
+		AF894A4228F1A15F0000F1B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF894A4328F1A15F0000F1B5 /* WidgetKit.framework */,
+				AF894A4528F1A15F0000F1B5 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF894A4728F1A15F0000F1B5 /* DynamicIsland-Widget */ = {
+			isa = PBXGroup;
+			children = (
+				AF894A4828F1A15F0000F1B5 /* DynamicIsland_WidgetBundle.swift */,
+				AF894A4A28F1A15F0000F1B5 /* DynamicIsland_WidgetLiveActivity.swift */,
+				AF894A4C28F1A15F0000F1B5 /* DynamicIsland_Widget.swift */,
+				AF894A4E28F1A15F0000F1B5 /* DynamicIsland_Widget.intentdefinition */,
+				AF894A4F28F1A1600000F1B5 /* Assets.xcassets */,
+				AF894A5128F1A1600000F1B5 /* Info.plist */,
+			);
+			path = "DynamicIsland-Widget";
+			sourceTree = "<group>";
+		};
 		AF970E4A28F0CA40001AAB75 = {
 			isa = PBXGroup;
 			children = (
 				AF970E5128F0CA49001AAB75 /* Shared */,
+				AF970E6628F1853A001AAB75 /* DynamicIsland-iOS */,
+				AF894A4728F1A15F0000F1B5 /* DynamicIsland-Widget */,
+				AF894A4228F1A15F0000F1B5 /* Frameworks */,
+				AF970E6528F1853A001AAB75 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -41,7 +164,7 @@
 				AF970E5828F0CBCC001AAB75 /* ActivityAttributesDynamicIsland.swift */,
 				AF970E5B28F0D232001AAB75 /* Delivery.swift */,
 				AF970E5C28F0DA42001AAB75 /* Taxi.swift */,
-				AF970E5D28F0DD68001AAB75 /* DynamicIslandType.swift */,
+				AF970E5D28F0DD68001AAB75 /* DynamicIslandViewType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -57,7 +180,11 @@
 		AF970E5428F0CA66001AAB75 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AF970E5528F0CB1E001AAB75 /* DeliveryView.swift */,
+				AF970E5528F0CB1E001AAB75 /* DynamicIslandView.swift */,
+				AF970E5E28F0DF79001AAB75 /* TaxiExpandedView.swift */,
+				AF006EE828F1B9E400CDCBF2 /* TaxiWideView.swift */,
+				AF970E5F28F0DF8E001AAB75 /* DeliveryExpandedView.swift */,
+				AF006EEB28F1BA2200CDCBF2 /* DeliveryWideView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -70,14 +197,97 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		AF970E6528F1853A001AAB75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF970E6428F1853A001AAB75 /* DynamicIsland-iOS.app */,
+				AF894A4128F1A15F0000F1B5 /* DynamicIsland-WidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF970E6628F1853A001AAB75 /* DynamicIsland-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AF970E7C28F18594001AAB75 /* App */,
+				AF970E6B28F1853B001AAB75 /* Assets.xcassets */,
+				AF970E6D28F1853B001AAB75 /* Preview Content */,
+			);
+			path = "DynamicIsland-iOS";
+			sourceTree = "<group>";
+		};
+		AF970E6D28F1853B001AAB75 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AF970E6E28F1853B001AAB75 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AF970E7C28F18594001AAB75 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AF970E6728F1853A001AAB75 /* DynamicIsland_iOSApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF894A4028F1A15F0000F1B5 /* DynamicIsland-WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF894A5728F1A1600000F1B5 /* Build configuration list for PBXNativeTarget "DynamicIsland-WidgetExtension" */;
+			buildPhases = (
+				AF894A3D28F1A15F0000F1B5 /* Sources */,
+				AF894A3E28F1A15F0000F1B5 /* Frameworks */,
+				AF894A3F28F1A15F0000F1B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DynamicIsland-WidgetExtension";
+			productName = "DynamicIsland-WidgetExtension";
+			productReference = AF894A4128F1A15F0000F1B5 /* DynamicIsland-WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		AF970E6328F1853A001AAB75 /* DynamicIsland-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF970E7028F1853B001AAB75 /* Build configuration list for PBXNativeTarget "DynamicIsland-iOS" */;
+			buildPhases = (
+				AF970E6028F1853A001AAB75 /* Sources */,
+				AF970E6128F1853A001AAB75 /* Frameworks */,
+				AF970E6228F1853A001AAB75 /* Resources */,
+				AF894A5A28F1A1600000F1B5 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF894A5528F1A1600000F1B5 /* PBXTargetDependency */,
+			);
+			name = "DynamicIsland-iOS";
+			productName = "DynamicIsland-iOS";
+			productReference = AF970E6428F1853A001AAB75 /* DynamicIsland-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		AF970E4B28F0CA40001AAB75 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					AF894A4028F1A15F0000F1B5 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					AF970E6328F1853A001AAB75 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
 			};
 			buildConfigurationList = AF970E4E28F0CA40001AAB75 /* Build configuration list for PBXProject "DynamicIsland" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -88,14 +298,246 @@
 				Base,
 			);
 			mainGroup = AF970E4A28F0CA40001AAB75;
+			productRefGroup = AF970E6528F1853A001AAB75 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				AF970E6328F1853A001AAB75 /* DynamicIsland-iOS */,
+				AF894A4028F1A15F0000F1B5 /* DynamicIsland-WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		AF894A3F28F1A15F0000F1B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF894A5028F1A1600000F1B5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF970E6228F1853A001AAB75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF970E6F28F1853B001AAB75 /* Preview Assets.xcassets in Resources */,
+				AF970E6C28F1853B001AAB75 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF894A3D28F1A15F0000F1B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF894A4928F1A15F0000F1B5 /* DynamicIsland_WidgetBundle.swift in Sources */,
+				AF006EED28F1BA2200CDCBF2 /* DeliveryWideView.swift in Sources */,
+				AF894A5C28F1A1C20000F1B5 /* Taxi.swift in Sources */,
+				AF894A5228F1A1600000F1B5 /* DynamicIsland_Widget.intentdefinition in Sources */,
+				AF894A5F28F1A1C40000F1B5 /* DynamicIslandViewModel.swift in Sources */,
+				AF894A6328F1A1CB0000F1B5 /* Double.swift in Sources */,
+				AF894A5B28F1A1C20000F1B5 /* DynamicIslandViewType.swift in Sources */,
+				AF894A4D28F1A15F0000F1B5 /* DynamicIsland_Widget.swift in Sources */,
+				AF894A6228F1A1C80000F1B5 /* TaxiExpandedView.swift in Sources */,
+				AF894A6128F1A1C80000F1B5 /* DeliveryExpandedView.swift in Sources */,
+				AF894A5E28F1A1C20000F1B5 /* Delivery.swift in Sources */,
+				AF894A4B28F1A15F0000F1B5 /* DynamicIsland_WidgetLiveActivity.swift in Sources */,
+				AF006EEA28F1B9E400CDCBF2 /* TaxiWideView.swift in Sources */,
+				AF894A5D28F1A1C20000F1B5 /* ActivityAttributesDynamicIsland.swift in Sources */,
+				AF894A6028F1A1C80000F1B5 /* DynamicIslandView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF970E6028F1853A001AAB75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF894A5328F1A1600000F1B5 /* DynamicIsland_Widget.intentdefinition in Sources */,
+				AF006EEC28F1BA2200CDCBF2 /* DeliveryWideView.swift in Sources */,
+				AF970E7B28F18551001AAB75 /* DynamicIslandViewModel.swift in Sources */,
+				AF970E7A28F18551001AAB75 /* ActivityAttributesDynamicIsland.swift in Sources */,
+				AF970E7428F18551001AAB75 /* DeliveryExpandedView.swift in Sources */,
+				AF970E7628F18551001AAB75 /* Taxi.swift in Sources */,
+				AF970E7328F18551001AAB75 /* Double.swift in Sources */,
+				AF970E6828F1853A001AAB75 /* DynamicIsland_iOSApp.swift in Sources */,
+				AF006EE928F1B9E400CDCBF2 /* TaxiWideView.swift in Sources */,
+				AF970E7828F18551001AAB75 /* Delivery.swift in Sources */,
+				AF970E7928F18551001AAB75 /* TaxiExpandedView.swift in Sources */,
+				AF970E7528F18551001AAB75 /* DynamicIslandView.swift in Sources */,
+				AF970E7728F18551001AAB75 /* DynamicIslandViewType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF894A5528F1A1600000F1B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF894A4028F1A15F0000F1B5 /* DynamicIsland-WidgetExtension */;
+			targetProxy = AF894A5428F1A1600000F1B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		AF894A5828F1A1600000F1B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = SHP38F3EM7;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DynamicIsland-Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "DynamicIsland-Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "barisozgen.DynamicIsland-iOS.DynamicIsland-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF894A5928F1A1600000F1B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = SHP38F3EM7;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DynamicIsland-Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "DynamicIsland-Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "barisozgen.DynamicIsland-iOS.DynamicIsland-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		AF970E4F28F0CA40001AAB75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -108,14 +550,194 @@
 			};
 			name = Release;
 		};
+		AF970E7128F1853B001AAB75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "\"DynamicIsland-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = SHP38F3EM7;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "barisozgen.DynamicIsland-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF970E7228F1853B001AAB75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"DynamicIsland-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = SHP38F3EM7;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "barisozgen.DynamicIsland-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AF894A5728F1A1600000F1B5 /* Build configuration list for PBXNativeTarget "DynamicIsland-WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF894A5828F1A1600000F1B5 /* Debug */,
+				AF894A5928F1A1600000F1B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AF970E4E28F0CA40001AAB75 /* Build configuration list for PBXProject "DynamicIsland" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AF970E4F28F0CA40001AAB75 /* Debug */,
 				AF970E5028F0CA40001AAB75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF970E7028F1853B001AAB75 /* Build configuration list for PBXNativeTarget "DynamicIsland-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF970E7128F1853B001AAB75 /* Debug */,
+				AF970E7228F1853B001AAB75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

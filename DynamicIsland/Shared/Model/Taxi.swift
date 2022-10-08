@@ -12,6 +12,7 @@ enum Taxi: Int, CaseIterable, Identifiable {
     case hailing
     case onTheWay
     case arrivingSoon
+    case arrived
     
     var id : Int { return rawValue}
     
@@ -20,15 +21,19 @@ enum Taxi: Int, CaseIterable, Identifiable {
         case .hailing: return "Taxi Hailing"
         case .onTheWay: return "On The Way"
         case .arrivingSoon: return "Arriving Soon!"
+        case .arrived: return "Arrived"
         }
     }
     
+    
     var imageName : String {
         switch self {
-        case .preparing: return "figure.wave"
+        case .hailing: return "figure.wave"
         case .onTheWay: return "car.fill"
         case .arrivingSoon: return "hand.wave.fill"
+        case .arrived: return "figure.walk.arrival"
         }
     }
+    
     
 }
