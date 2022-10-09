@@ -23,7 +23,24 @@ struct TaxiExpandedView: View {
                     Spacer()
                         .frame(width: .infinity, height: 4)
                         .background(.gray)
-                    
+                    if taxi == .arrived {
+                        VStack {
+                            Image(systemName: "mappin.and.ellipse")
+                                .padding(2)
+                                .frame(width: 24, height: 24)
+                                .background(.gray)
+                                .cornerRadius(4)
+                            Spacer()
+                                .frame(width: 4, height: 10)
+                                .background(.gray)
+                            Spacer()
+                                .frame(width: 17, height: 3.9)
+                                .background(.gray)
+                                .offset(x: -6 , y: 0)
+                        }
+                        .offset(x: geometry.size.width - 29 , y: -16.7)
+                        
+                    }
                     HStack{
                         // filled part
                         Spacer()
@@ -34,9 +51,9 @@ struct TaxiExpandedView: View {
                         VStack {
                             Image(systemName: taxi.imageName)
                                 .padding(2)
+                                .frame(width: 24, height: 24)
                                 .background(.purple)
                                 .cornerRadius(4)
-                            
                             Spacer()
                                 .frame(width: 4, height: 10)
                                 .background(.purple)
@@ -83,12 +100,6 @@ struct TaxiExpandedView: View {
                 .cornerRadius(4)
                 
             }
-            
-            
-            
-            
-            
-            
         }
         .frame(width: .infinity, height: .infinity)
         .fontWeight(.semibold)
@@ -96,14 +107,18 @@ struct TaxiExpandedView: View {
     }
     
     func sliderFilledWidth(maxWidth: Double) -> Double {
-        return maxWidth / 100 * percent
+    
+        if taxi != .arrived {
+            return maxWidth / 100 * percent
+        }
+        else { return maxWidth / 100 * 2 }
     }
 }
 
 struct TaxiExpandedView_Previews: PreviewProvider {
     static var previews: some View {
         
-        let taxi = Taxi.onTheWay
+        let taxi = Taxi.arrived
 
         TaxiExpandedView(
             taxi: taxi,

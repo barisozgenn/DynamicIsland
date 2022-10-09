@@ -16,6 +16,7 @@ struct ActivityAttributesDynamicIsland: ActivityAttributes {
         var description: String
         var percent: Double
         var value: Double
+        var state: Int
     }
 
     // Fixed non-changing properties about your activity go here!

@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AF006EE928F1B9E400CDCBF2 /* TaxiWideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF006EE828F1B9E400CDCBF2 /* TaxiWideView.swift */; };
-		AF006EEA28F1B9E400CDCBF2 /* TaxiWideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF006EE828F1B9E400CDCBF2 /* TaxiWideView.swift */; };
-		AF006EEC28F1BA2200CDCBF2 /* DeliveryWideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF006EEB28F1BA2200CDCBF2 /* DeliveryWideView.swift */; };
-		AF006EED28F1BA2200CDCBF2 /* DeliveryWideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF006EEB28F1BA2200CDCBF2 /* DeliveryWideView.swift */; };
+		AF006EEE28F2D1E400CDCBF2 /* DynamicIsland_WidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF894A4A28F1A15F0000F1B5 /* DynamicIsland_WidgetLiveActivity.swift */; };
 		AF894A4428F1A15F0000F1B5 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF894A4328F1A15F0000F1B5 /* WidgetKit.framework */; };
 		AF894A4628F1A15F0000F1B5 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF894A4528F1A15F0000F1B5 /* SwiftUI.framework */; };
 		AF894A4928F1A15F0000F1B5 /* DynamicIsland_WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF894A4828F1A15F0000F1B5 /* DynamicIsland_WidgetBundle.swift */; };
@@ -68,8 +65,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AF006EE828F1B9E400CDCBF2 /* TaxiWideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiWideView.swift; sourceTree = "<group>"; };
-		AF006EEB28F1BA2200CDCBF2 /* DeliveryWideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryWideView.swift; sourceTree = "<group>"; };
 		AF894A4128F1A15F0000F1B5 /* DynamicIsland-WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DynamicIsland-WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF894A4328F1A15F0000F1B5 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		AF894A4528F1A15F0000F1B5 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -182,9 +177,7 @@
 			children = (
 				AF970E5528F0CB1E001AAB75 /* DynamicIslandView.swift */,
 				AF970E5E28F0DF79001AAB75 /* TaxiExpandedView.swift */,
-				AF006EE828F1B9E400CDCBF2 /* TaxiWideView.swift */,
 				AF970E5F28F0DF8E001AAB75 /* DeliveryExpandedView.swift */,
-				AF006EEB28F1BA2200CDCBF2 /* DeliveryWideView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -334,7 +327,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF894A4928F1A15F0000F1B5 /* DynamicIsland_WidgetBundle.swift in Sources */,
-				AF006EED28F1BA2200CDCBF2 /* DeliveryWideView.swift in Sources */,
 				AF894A5C28F1A1C20000F1B5 /* Taxi.swift in Sources */,
 				AF894A5228F1A1600000F1B5 /* DynamicIsland_Widget.intentdefinition in Sources */,
 				AF894A5F28F1A1C40000F1B5 /* DynamicIslandViewModel.swift in Sources */,
@@ -345,7 +337,6 @@
 				AF894A6128F1A1C80000F1B5 /* DeliveryExpandedView.swift in Sources */,
 				AF894A5E28F1A1C20000F1B5 /* Delivery.swift in Sources */,
 				AF894A4B28F1A15F0000F1B5 /* DynamicIsland_WidgetLiveActivity.swift in Sources */,
-				AF006EEA28F1B9E400CDCBF2 /* TaxiWideView.swift in Sources */,
 				AF894A5D28F1A1C20000F1B5 /* ActivityAttributesDynamicIsland.swift in Sources */,
 				AF894A6028F1A1C80000F1B5 /* DynamicIslandView.swift in Sources */,
 			);
@@ -356,18 +347,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF894A5328F1A1600000F1B5 /* DynamicIsland_Widget.intentdefinition in Sources */,
-				AF006EEC28F1BA2200CDCBF2 /* DeliveryWideView.swift in Sources */,
 				AF970E7B28F18551001AAB75 /* DynamicIslandViewModel.swift in Sources */,
 				AF970E7A28F18551001AAB75 /* ActivityAttributesDynamicIsland.swift in Sources */,
 				AF970E7428F18551001AAB75 /* DeliveryExpandedView.swift in Sources */,
 				AF970E7628F18551001AAB75 /* Taxi.swift in Sources */,
 				AF970E7328F18551001AAB75 /* Double.swift in Sources */,
 				AF970E6828F1853A001AAB75 /* DynamicIsland_iOSApp.swift in Sources */,
-				AF006EE928F1B9E400CDCBF2 /* TaxiWideView.swift in Sources */,
 				AF970E7828F18551001AAB75 /* Delivery.swift in Sources */,
 				AF970E7928F18551001AAB75 /* TaxiExpandedView.swift in Sources */,
 				AF970E7528F18551001AAB75 /* DynamicIslandView.swift in Sources */,
 				AF970E7728F18551001AAB75 /* DynamicIslandViewType.swift in Sources */,
+				AF006EEE28F2D1E400CDCBF2 /* DynamicIsland_WidgetLiveActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +431,7 @@
 				INFOPLIST_FILE = "DynamicIsland-Widget/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "DynamicIsland-Widget";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -516,6 +507,7 @@
 				INFOPLIST_FILE = "DynamicIsland-Widget/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "DynamicIsland-Widget";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -541,12 +533,14 @@
 		AF970E4F28F0CA40001AAB75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 			};
 			name = Debug;
 		};
 		AF970E5028F0CA40001AAB75 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 			};
 			name = Release;
 		};
@@ -609,6 +603,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -687,6 +682,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

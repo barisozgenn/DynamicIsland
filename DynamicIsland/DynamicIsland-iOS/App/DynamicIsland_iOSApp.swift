@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct DynamicIsland_iOSApp: App {
+    @StateObject private var vm = DynamicIslandViewModel()
     var body: some Scene {
         WindowGroup {
             DynamicIslandView()
+                .environmentObject(vm)
         }
     }
 }

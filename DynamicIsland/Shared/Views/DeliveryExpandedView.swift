@@ -20,22 +20,26 @@ struct DeliveryExpandedView: View {
                 ZStack(alignment: .leading){
                     
                     // background part
-                    HStack{
+                    HStack(spacing: 1){
                         Spacer()
                             .frame(width: geometry.size.width * 0.15, height: 4)
-                            .background(.orange)
+                            .background(delivery == .delivered ? .green : .orange)
+                            .cornerRadius(4)
                         
                         Spacer()
                             .frame(width: geometry.size.width * 0.60, height: 4)
-                            .background(.blue)
+                            .background(delivery == .delivered ? .green : .blue)
+                            .cornerRadius(4)
                         
                         Spacer()
                             .frame(width: .infinity, height: 4)
-                            .background(.brown)
+                            .background(delivery == .delivered ? .green : .brown)
+                            .cornerRadius(4)
                         
                         Spacer()
                             .frame(width: .infinity, height: 4)
                             .background(.green)
+                            .cornerRadius(4)
                     }
                     
                     // filled part
@@ -48,24 +52,29 @@ struct DeliveryExpandedView: View {
                         // slider image
                         VStack {
                             ZStack{
-                                HStack(spacing: 3){
-                                    Image(systemName: "clock")
+                                
+                                if delivery != .delivered {
                                     
-                                    Text("\(minute)m")
+                                    HStack(spacing: 3){
+                                        Image(systemName: "clock")
+                                        
+                                        Text("\(minute)m")
+                                    }
+                                    .font(.subheadline)
+                                    .padding(.horizontal, 4)
+                                    .padding(.vertical,3)
+                                    .background(stateColor)
+                                    .cornerRadius(4)
+                                    .offset(x: percent < 71 ? 42 : -42, y:0)
                                 }
-                                .font(.headline)
-                                .padding(.horizontal, 4)
-                                .padding(.vertical,5)
-                                .background(stateColor)
-                                .cornerRadius(4)
-                                .offset(x: percent < 71 ? 50 : -50, y:0)
+                                
                                 
                                 Image(systemName: delivery.imageName)
                                     .resizable()
                                     .scaledToFit()
                                     .padding(4)
-                                .frame(height: 30)
-                                    
+                                    .frame(height: 24)
+                                
                                     .background(stateColor)
                                     .cornerRadius(4)
                             }
@@ -75,11 +84,12 @@ struct DeliveryExpandedView: View {
                                 .frame(width: 4, height: 10)
                                 .background(stateColor)
                             Spacer()
-                                .frame(width: 10, height: 3.9)
+                                .frame(width: 14, height: 3.9)
                                 .background(stateColor)
+                                .cornerRadius(4)
                                 .offset(x: 0 , y: 0)
                         }
-                        .offset(x:0 , y: -20)
+                        .offset(x:0 , y: -17)
                     }
                     
                 }
@@ -100,14 +110,14 @@ struct DeliveryExpandedView: View {
                 Spacer()
                 
                 VStack(alignment: .trailing){
-
+                    
                     Text(subTitle)
                         .font(.subheadline)
                     
                 }
                 
             }
-             
+            
         }
         .frame(width: .infinity, height: .infinity)
         .fontWeight(.semibold)
@@ -115,7 +125,11 @@ struct DeliveryExpandedView: View {
     }
     
     func sliderFilledWidth(maxWidth: Double) -> Double {
-        return maxWidth / 100 * percent
+        
+        if delivery != .delivered {
+            return maxWidth / 100 * percent
+        }
+        else { return maxWidth / 100 * 92 }
     }
     
     var stateColor: Color {
@@ -131,11 +145,11 @@ struct DeliveryExpandedView: View {
 struct DeliveryExpandedView_Previews: PreviewProvider {
     static var previews: some View {
         
-        let delivery = Delivery.onTheWay
+        let delivery = Delivery.delivered
         
         DeliveryExpandedView(
             delivery: delivery,
-            percent: 14,
+            percent: 92,
             minute: 7,
             subTitle :"Pickup by BO Tower on JBR St")
         .preferredColorScheme(.dark)
